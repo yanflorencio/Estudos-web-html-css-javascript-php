@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<title>
+			.:: Formulário ::.
+		</title>
+		<link rel="stylesheet" type="text/css" href="css/estilo.css" />
+		 <script type="text/javascript" src="Java.js">
+		 </script>
+	</head>
+	<body>
+	    
+		<div id="interface">
+			<section id = "corpo">
+				<form  id="formulario" name="formulario" onSubmit="return verificaFormulario(this)" method="post" action="PHP.php">
+					<h3>Identificação</h3>
+					<label id="texto">Nome:</label><br><input class="especial" type="text" name="nome" value="" />					
+					<h3>Onde você nasceu?</h3>
+					<label id="pais">País:</label><br><input class="especial" type="text" name="pais" value="" /><br>
+					<label id="estado">Estado:</label><br><input class="especial" type="text" name="estado" value="" /><br>
+					<label id="municipio">Minicípio:</label><br><input class="data" type="text" name="municipio" value="" /><br>
+					<h3 id="data">Sua data de nascimemto é:</h3>
+					<input class="campo" type="text" name="data_nascimento"/>					
+					
+					<h3 id="sexo">Sexo:</h3> 
+					<input type="radio" name="sex" value="Masculino" class="sexo">Masculino<br>
+					<input type="radio" name="sex" value="Feminino" class="sexo">Feminino<br>
+					<input type="radio" name="sex" value="Sem declaração" class="sexo">Sem declaração
+			
+					<h3 id="raca">Qual a sua cor ou raça?</h3>
+					<select class="campo" name=1 id=1>
+						<option value=""> Selecione
+						<option value="amarela"> Amarela
+						<option value="branca"> Branca
+						<option value="parda"> Parda
+						<option value="preta quilombola"> Preta - Quilombola
+						<option value="preta não quilombola"> Preta - Não Quilombola
+						<option value="indigena"> Indígena
+						<option value="sem declaracao"> Sem declaracão
+					</select><br>
+					
+					<h3 id="civil">Estado Civil:</h3>
+					<select class="campo" name=2 id=2>
+					    <option value=""> Selecione
+						<option value="solteiro"> Solteiro
+						<option value="casado"> Casado
+						<option value="uniao estavel"> União Estável
+						<option value="separado"> Separado
+						<option value="viuvo"> Viúvo
+					</select><br>
+					
+					<h3 id="ano">O ano em que você concluiu o ensino médio?</h3>
+					<select class="campo" name=3 id=3>
+					    <option value=""> Selecione
+						<option value="2014"> 2014
+						<option value="2013"> 2013
+						<option value="2012"> 2012
+						<option value="2011"> 2011
+						<option value="2010 ou menos"> 2010 ou menos.
+					</select><br>
+					
+					<h3 id="cursinho">Você frequentou algum cursinho (pré-vestibular, pré-ENEM, etc.) antes de ingressar na universidade?</h3>
+					<select class="campo" name=4 id=4>
+					    <option value=""> Selecione
+						<option value="não governamental gratuito"> Cursinho não governamental gratuito
+						<option value="governamental gratuito"> Cursinho governamental gratuito
+						<option value="particular"> Cursinho particular
+						<option value="nao"> Não
+					</select><br>
+					
+					<h3 id="medio">A maior parte do ensino médio que você cursou foi?</h3>
+					<select class="campo" name=5 id=5>
+					    <option value=""> Selecione
+						<option value="Ensino médio regular"> Ensino médio regular
+						<option value="Técnico"> Técnico
+						<option value="Magistério"> Magistério
+						<option value="EJA/Supletivo"> EJA/Supletivo
+						<option value="Outro"> Outro
+					</select><br>
+					
+					<h3 id="escola">Em que tipo de escola você cursou o Ensino Médio?</h3>
+					<select class="campo" name=6 id=6>
+					    <option value=""> Selecione
+						<option value="somente escola publica"> Somente em escola pública
+						<option value="maior parte em escola publica"> Maior parte em escola pública
+						<option value="maior parte em escola particular"> Maior parte em escola particular
+						<option value="somente escola publica"> Somente em escola particular					
+					</select><br>
+				
+					<h3>Preencha os dados onde você concluiu o ensino médio:</h3>
+					<label id="concluiu">Escola:</label><br><input class="especial" type="text" name="escola_ensino"><br>
+					<label id="ensino">Estado:</label><br><input class="especial" type="text" name="estado_ensino"><br>
+					<label id="ensino_medio">Minicípio:</label><br><input class="especial" type="text" name="municipio_ensino"><br><br>
+				
+					<h3 id="universidade">Como você ingressou na universidade?</h3>
+					<select class="campo" name=7 id=7>
+					    <option value=""> Selecione
+						<option value="ENEM/SISU"> ENEM/SISU
+						<option value="Transferência"> Transferência
+						<option value="Portador de diploma(Reingresso)"> Portador de diploma(Reingresso)
+						<option value="Outros(Convênio, Ex officio, etc.)"> Outros(Convênio, Ex officio, etc.)
+					</select><br>
+					
+					<h3 id="faculdade">O seu ingresso nesta faculdade foi através de:</h3>
+					<select class="campo" name=8 id=8>
+					    <option value=""> Selecione
+						<option value="Ampla Concorrência(Vagas não reservadas)"> Ampla Concorrência(Vagas não reservadas)
+						<option value="Cota de Escola Pública/Pretos/Pardos/Indígenas/Renda bruta per capta igual ou inferior a 1,5 salários mínimos"> Cota de Escola Pública/Pretos/Pardos/Indígenas/Renda bruta per capta igual ou inferior a 1,5 salários mínimos
+						<option value="Cota de Escola Pública/Pretos/Pardos/Indígenas/Independente da renda"> Cota de Escola Pública/Pretos/Pardos/Indígenas/Independente da renda
+						<option value="Cota de Escola Pública/Renda bruta per capta igual ou inferior a 1,5 salários mínimos"> Cota de Escola Pública/Renda bruta per capta igual ou inferior a 1,5 salários mínimos
+						<option value="Cota de Escola Pública/Independente da renda"> Cota de Escola Pública/Independente da renda
+						<option value="Cota para Professores da Educação Fundamental e Média pública na primeira chamada do SISU"> Cota para Professores da Educação Fundamental e Média pública na primeira chamada do SISU
+					</select>
+				
+					<img id="imagem" src="UFRRJ.png" alt="UFRRJ" title="UFRRJ"/>
+					</section>
+			      <aside id="lateral">
+					<h3 id="curso">O curso no qual você está matriculado corresponde a sua primeira opção?</h3>
+					<input type="radio" name="primeira" value="sim" class="sexo"/>Sim<br>
+					<input type="radio" name="primeira" value="nao" class="sexo"/>Não<br>
+					
+					<h3 id="nota">A nota de corte determinou a escolha do curso?</h3>
+					<input type="radio" name="nota" value="sim" class="sexo"/>Sim<br>
+					<input type="radio" name="nota" value="nao" class="sexo"/>Não<br>
+				
+					<h3 id="cidade">Você mudou de cidade ou estado para realizar este curso?</h3>
+					<select class="campo" name=9 id=9>
+					    <option value=""> Selecione
+						<option value="Não"> Não
+						<option value="Sim, mudei de uma cidade para outra dentro do mesmo estado."> Sim, mudei de uma cidade para outra dentro do mesmo estado.
+						<option value="Sim, mudei de estado"> Sim, mudei de estado.
+					</select><br>
+					
+					<h3 id="meio">Qual o principal meio de transporte que você utiliza para chegar à Universidade?</h3>
+					<select class="campo" name=10 id=10>
+					    <option value=""> Selecione
+						<option value="À pé"> À pé.
+						<option value="Bicicleta"> Bicicleta
+						<option value="Transporte próprio(carro, moto, etc.)"> Transporte próprio(carro, moto, etc.)
+						<option value="Carona"> Carona
+						<option value="Transporte coletivo"> Transporte coletivo
+						<option value="Transporte locado"> Transporte locado
+						<option value="Taxi/Moto táxi"> Taxi/Moto táxi
+					</select><br>
+					
+					<h3 id="motivacao">Qual a principal motivação que o levou a optar por este curso?</h3>
+					<select class="campo" name=11 id=11>
+					    <option value=""> Selecione
+						<option value="Aptidão/tendência/inclinação/vocação"> Aptidão/tendência/inclinação/vocação
+						<option value="Influência familiar e/ou amigos"> Influência familiar e/ou amigos
+						<option value="Mercado de trabalho promissor"> Mercado de trabalho promissor
+						<option value="Outras"> Outras
+					</select><br>
+					
+					<h3 id="tempo">Quanto tempo você gasta para chegar à Universidade?</h3>
+					<select class="campo" name=12 id=12>
+					    <option value=""> Selecione
+						<option value="Até 15 min"> Até 15 min.
+						<option value="Mais de 15 min e até 30 min"> Mais de 15 min e até 30 min.
+						<option value="Mais de 30 min e atá 1h"> Mais de 30 min e atá 1h.
+						<option value="Mais de 1h e até 2h"> Mais de 1h e até 2h.
+						<option value="Mais de 2h"> Mais de 2h.
+					</select><br>
+					
+					<h3 id="trabalha">Você trabalha?</h3>
+					<select class="campo" name=13 id=13>
+					    <option value=""> Selecione
+						<option value="Sim, tenho um trabalho remunerado"> Sim, tenho um trabalho remunerado.
+						<option value="Sim, tenho um trabalho não remunerado"> Sim, tenho um trabalho não remunerado.
+						<option value="Não trabalho e NÃO ESTOU à procura de trabalho"> Não trabalho e NÃO ESTOU à procura de trabalho.
+						<option value="Não trabalho e ESTOU à procura de trabalho"> Não trabalho e ESTOU à procura de trabalho.
+					</select><br>
+					
+					<h3>Dos auxílios relacionados abaixo, classifique de acordo com a importância aqueles que melhor contribuirão para a sua permanência na UFRRJ.</h3>
+					<h4 id="auxilios">Alimentação:</h4>
+					<select class="campo" name=14 id=14>
+					    <option value=""> Selecione
+						<option value="Muito importante"> Muito importante
+						<option value="Importante"> Importante
+						<option value="Pouco Importante"> Pouco Importante
+					</select><br>
+					
+					<h4 id="moradia">Moradia:</h4>
+					<select class="campo" name=15 id=15>
+					    <option value=""> Selecione
+						<option value="Muito importante"> Muito importante
+						<option value="Importante"> Importante
+						<option value="Pouco Importante"> Pouco Importante
+					</select><br>
+					
+					<h4 id="transporte">Transporte:</h4>
+					<select class="campo" name=16 id=16>
+					    <option value=""> Selecione
+						<option value="Muito importante"> Muito importante
+						<option value="Importante"> Importante
+						<option value="Pouco Importante"> Pouco Importante
+					</select><br>
+					
+					<h4 id="didatico">Didático - Pedagógico:</h4>
+					<select class="campo" name=17 id=17>
+					    <option value=""> Selecione
+						<option value="Muito importante"> Muito importante
+						<option value="Importante"> Importante
+						<option value="Pouco Importante"> Pouco Importante
+					</select><br>
+					
+					<h4 id="alojamento">Alojamento Universitário:</h4>
+					<select class="campo" name=18 id=18>
+					    <option value=""> Selecione
+						<option value="Muito importante"> Muito importante
+						<option value="Importante"> Importante
+						<option value="Pouco Importante"> Pouco Importante
+					</select><br>
+					
+					<h3 id="mae">Qual a escolaridade da mãe ou da pessoa que o(a) criou como mãe?</h3>
+					<select class="campo" name=19 id=19>
+					    <option value=""> Selecione
+						<option value="Não teve mãe ou pessoa que exerceu tal papel a criação"> Não teve mãe ou pessoa que exerceu tal papel a criação.
+						<option value="Sem instrução"> Sem instrução.
+						<option value="Ensino Fundamental(antigo 1º grau) - INCOMPLETO"> Ensino Fundamental(antigo 1º grau) - INCOMPLETO.
+						<option value="Ensino Fundamental(antigo 1º grau) - COMPLETO"> Ensino Fundamental(antigo 1º grau) - COMPLETO.
+						<option value="Ensino Médio(antigo 2º grau) - INCOMPLETO"> Ensino Médio(antigo 2º grau) - INCOMPLETO.
+						<option value="Ensino Médio(antigo 2º grau) - COMPLETO"> Ensino Médio(antigo 2º grau) - COMPLETO.
+						<option value="Ensino Superior - INCOMPLETO"> Ensino Superior - INCOMPLETO.
+						<option value="Ensino Superior - COMPLETO"> Ensino Superior - COMPLETO.
+						<option value="Especialização, Mestrado ou Doutorado"> Especialização, Mestrado ou Doutorado.
+					</select><br>
+					
+					<h3 id="pai">Qual a escolaridade do pai ou da pessoa que o(a) criou como pai?</h3>
+					<select class="campo" name=20 id=20>
+					    <option value=""> Selecione
+						<option value="Não teve pai ou pessoa que exerceu tal papel a criação"> Não teve pai ou pessoa que exerceu tal papel a criação.
+						<option value="Transferência"> Sem instrução.
+						<option value="Sem instrução"> Ensino Fundamental(antigo 1º grau) - INCOMPLETO.
+						<option value="Ensino Fundamental(antigo 1º grau) - COMPLETO"> Ensino Fundamental(antigo 1º grau) - COMPLETO.
+						<option value="Ensino Médio(antigo 2º grau) - INCOMPLETO"> Ensino Médio(antigo 2º grau) - INCOMPLETO.
+						<option value="Ensino Médio(antigo 2º grau) - COMPLETO"> Ensino Médio(antigo 2º grau) - COMPLETO.
+						<option value="Ensino Superior - INCOMPLETO"> Ensino Superior - INCOMPLETO.
+						<option value="Ensino Superior - COMPLETO"> Ensino Superior - COMPLETO.
+						<option value="Especialização, Mestrado ou Doutorado"> Especialização, Mestrado ou Doutorado.
+					</select><br>
+			
+					<input type="submit" class="i2Style" id="botaomenor" name="Enviar"/>
+				 </aside>	
+	            </form>			
+			
+			<footer id="rodape">
+				<br><br>
+				<p>Copyright &copy; 2015</p>
+				<p>Trabalho de Web I</p>
+				<br><br>
+			</footer>
+		</div>
+	</body>
+</html>

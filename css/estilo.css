@@ -1,0 +1,172 @@
+﻿*{
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  background-image: url(fundo2.jpg);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  text-shadow: 0.1em 0.1em 0.1em #000000;
+}
+
+h1, h2, h3, h4{
+  text-align: justify;
+  font-family: "Arial Bold", sans-serif;
+  margin:10px;
+  text-shadow: 0.1em 0.1em 0.1em #000000;
+}
+
+section#corpo{
+  display: block;
+  width: 410px;
+  float:left;
+  padding-left: 20px;
+  margin-top:30px;
+  margin-bottom:5px;
+  text-align: justify;
+}
+
+section#corpo2{
+  display: block;
+  width: 800px;
+  /*float:center;*/
+  padding:40px;
+  margin-top:30px;
+  margin-bottom:5px;
+  text-align: justify;
+}
+
+aside#lateral{
+  display:block;
+  width: 410px;
+  float:right;
+  padding-right: 20px;
+  margin-top: 30px;
+  text-align: justify;
+  border-left: 1px solid #ffffff;
+  padding-left:20px;
+  padding-bottom:40px;
+}
+
+footer#rodape{
+  clear:both;
+  border-top: 1px solid #ffffff;
+  text-align: center;
+  font-family: "Orator Std", sans-serif;
+  font-size: 14px;
+  font-weight:bold;
+  text-shadow: 0.1em 0.1em 0.1em #000000;
+}
+
+div#interface{
+  width:900px;
+  height:1600px;
+  background-color: #14458f;
+  margin: 5% auto 5% auto;
+  /*margin: 80px auto 80px auto;*/
+  box-shadow: 0px 0px 10px #000000;
+}
+div#interface2{
+  width:900px;
+  height:550px;
+  background-color: #14458f;
+  margin: 5% auto 5% auto;
+  /*margin: 80px auto 80px auto;*/
+  box-shadow: 0px 0px 10px #000000;
+}
+
+tr td{
+  height: 30px;
+  padding-left:5px;
+  border: solid 1px;
+  font-weight:bold;
+}
+
+#formulario label{
+    left:80px;
+	margin:10px;
+	text-shadow: 0.1em 0.1em 0.1em #000000;
+}
+
+input[type=text], select{     
+    border-radius:7px;
+    background-color: #ffffff; 
+	border:none;
+	width:250px;
+	height:25px;
+    margin-top:5px;	
+	padding-left:10px;	
+	margin-bottom:5px;	
+	margin-left:10px;
+}
+input[type=radio]{
+	border-radius:7px;
+	border:none;
+    margin-top:5px;	
+	padding-left:10px;	
+	margin-bottom:5px;	
+	margin-left:10px;
+}
+
+textarea{
+border-radius:2px;
+background-color: #ffffff; 
+border:none;
+width:250px;
+height:100px;
+margin-left:70px;
+}
+
+
+.i2Style{
+font:bold 14px Tahoma, Geneva, sans-serif;
+font-style:normal;
+color:#000000;
+background:#e8e8e8;
+border:1px solid #a8a8a8;
+text-shadow:0px -1px 0px #222222;
+box-shadow:3px 4px 4px #000000;
+box-shadow:3px 4px 4px #000000;
+box-shadow:3px 4px 4px #000000;
+border-radius:10px 10px 10px 10px;
+border-radius:10px 10px 10px 10px;
+border-radius:10px 10px 10px 10px;
+width:137px;
+padding:11px 17px;
+cursor:pointer;
+margin:0 auto;
+}
+.i2Style:active{
+cursor:pointer;
+position:relative;
+top:2px;
+}
+
+input[type=submit]#botaomenor{
+width:90px;
+height:30px;
+padding:5px;
+margin-top: 10px;
+position: relative;
+left: 10px;
+}
+
+#imagem{
+width:850px;
+height:210px;
+position:center;
+}
+
+#imagem2{
+width:450px;
+height:120px;
+position: relative;
+left: 225px;
+}
+
+#botao2{
+position: relative;
+left: 330px;
+}

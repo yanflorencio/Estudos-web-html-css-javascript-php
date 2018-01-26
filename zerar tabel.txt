@@ -1,0 +1,1 @@
+alter table nome_da_sua_tabela auto_increment=0 
